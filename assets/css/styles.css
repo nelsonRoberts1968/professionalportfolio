@@ -1,10 +1,230 @@
-.section-title{
-    color:#7393B3;
-}
-.top-nav{
+
+header{
+    background-color: #7393b3;
+    height: 100px;
 
 }
+ body header h1{
+  font-weight: bold;
+  font-size: 36px;
+  color: #fce138;
+  padding-top: 50px;
+  display: inline;
+}
 
-.subtitle{
-    
+header a {
+    color: #fce138;
+    text-decoration: none;
+}
+
+header nav {
+  float: right;
+  margin: 10px 0;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  margin: 20px 30px;
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+body h1 {
+  color:darkcyan;
+  font-weight: normal;
+  font-size: 36px;
+  padding: 20px;
+}
+body h2 {
+  color: #565656;
+  float: right;
+}
+/*about me section flex box*/
+.about-me {
+  display: flex;
+  flex-direction: row;
+}
+.title {
+  min-height: 200px;
+  margin-top: 100px;
+  display: inline;
+}
+
+.about-me .paragraph {
+  padding: 10px 20px 10px 10px;
+  border: solid 3px #7393b3;
+  flex-grow: 1;
+  color: #bdc3c7;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 100px;
+  min-height: 200px;
+  font-size: large;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.about-divider {
+  border: 2px solid #565656;
+  margin-left: 180px;
+  min-height: 200px;
+  margin-top: 100px;
+}
+/*work section diver and contect flexbox*/
+.work-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+}
+.work-devider {
+  border: 2px solid #565656;
+  margin-left: 180px;
+  min-height: 500px;
+}
+
+.projects {
+  padding: 10px 20px 10px 10px;
+  /* border: solid 3px #7393b3; */
+  flex-grow: 1;
+  color: #bdc3c7;
+  margin-left: 50px;
+  min-height: 200px;
+  font-size: large;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.work-subsection {
+  display: flex;
+  color: cadetblue;
+  flex-direction: column;
+}
+.surf-section .surf {
+  min-height: 500px;
+  margin-bottom: 10px;
+  border: solid 3px #7393b3;
+}
+.surf h2 {
+  position: absolute;
+  bottom: 40px;
+  padding-left: 20px;
+}
+.surf h3 {
+  position: absolute;
+  padding-left: 20px;
+  bottom: 0;
+}
+.group-stack {
+  min-height: 500px;
+  margin-bottom: 10px;
+  border: solid 3px #7393b3;
+}
+/* led and calculator flexbox sectio*/
+.led-cal {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-height: 240px;
+}
+.led {
+  flex-grow: 1;
+  margin: 5px;
+  position: relative;
+}
+.led h2 {
+  position: absolute;
+  bottom: 40px;
+  padding-left: 20px;
+}
+.led h3 {
+  position: absolute;
+  padding-left: 20px;
+  bottom: 0;
+}
+
+.calc {
+  flex-grow: 1;
+  margin: 5px;
+  position: relative;
+}
+.calc h3 {
+  position: absolute;
+  padding-left: 20px;
+  bottom: 0;
+}
+.calc h2 {
+  position: absolute;
+  bottom: 40px;
+  padding-left: 20px;
+}
+/* puzzle and run flexbox section*/
+.puzzle-run {
+  display: flex;
+  flex-direction: row;
+  min-height: 240px;
+}
+.puzzles {
+  flex-grow: 1;
+  margin: 5px;
+  position: relative;
+}
+.run {
+  flex-grow: 1;
+  margin: 5px;
+  position: relative;
+}
+.run h3 {
+  position: absolute;
+  padding-left: 20px;
+  bottom: 0;
+}
+.run h2 {
+  position: absolute;
+  bottom: 40px;
+  padding-left: 20px;
+}
+.puzzles h3 {
+  position: absolute;
+  padding-left: 20px;
+  bottom: 0;
+}
+.puzzles h2 {
+  position: absolute;
+  bottom: 40px;
+  padding-left: 20px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  background-color:#7393b3;
+  margin-top: 75px;
+  padding: 20px;
+}
+.contact-section .contact-label h1{
+    color: #fce138;
+}
+.contact-devider {
+  border: 2px solid #565656;
+  margin-left: 70px;
+  min-height: 100px;
+}
+.contact-items li {
+  display: inline;
+}
+/*My contact flexbox*/
+
+.contact-items ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  padding-top: 40px;
+  font-size: 22px;
+}
+.contact-items a {
+    color: #fce138;
+    text-decoration: none;
+    text-justify: center;
+}
+.work-subsection div {
+  border: solid 2px #7393b3;
+  min-height: 100px;
 }
