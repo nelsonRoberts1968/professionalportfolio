@@ -1,8 +1,6 @@
-
 header {
   background-color: #7393b3;
   height: 100px;
-  
 }
 body header h1 {
   font-weight: bold;
@@ -30,6 +28,27 @@ header nav ul li a {
   font-size: 22px;
 }
 
+/*flexbox for profile image and profile title*/
+
+.profile-title {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 0.5em 0;
+  font-weight: normal;
+  font-family: "Ultra", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-shadow: 0 1px white, 0 3px #7393b3;
+}
+.profile-pic {
+  border-radius: 75px;
+  margin-left: 50px;
+  text-align: center;
+  margin-top: 75px;
+}
+
 body h1 {
   color: darkcyan;
   font-weight: normal;
@@ -43,11 +62,12 @@ body h2 {
 /*about me section flex box*/
 .about-me {
   display: flex;
+  margin-top: 20px;
   flex-direction: row;
 }
 .title {
   margin-top: 100px;
-  display: inline;
+  display: inline-block;
 }
 
 .about-me .paragraph {
@@ -95,12 +115,16 @@ body h2 {
   color: cadetblue;
   flex-direction: column;
 }
-.surf-section .surf {
+.surf-section {
   min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
   margin-bottom: 10px;
-  /* background-image:url("../images/surfreport.jpg"); */
+  /* background-image: url("../images/surfreport.jpg"); */
   border: solid 20px #7393b3;
 }
+
 .surf h2 {
   position: absolute;
   bottom: 40px;
@@ -174,6 +198,7 @@ body h2 {
 }
 .run {
   flex-grow: 1;
+  background-color: #7393b3;
   margin: 5px;
   position: relative;
   background-image: url("../images/running-background.jpeg");
@@ -240,16 +265,7 @@ a:hover {
   color: mediumaquamarine;
 }
 
-/*Resizing all images at once*/
-/* .led img {
-  width: 100%;
-  height: 60%;
-}
-.calc img {
-  width: 100%;
-  height: 90%;
-} */
-/* Media Query for smal scree sizes*/
+/* Media Query for small scree sizes*/
 @media screen and (max-width: 980px) {
   header h1 a {
     @media screen and (max-width: 980px) {
@@ -257,23 +273,23 @@ a:hover {
         padding-bottom: 0;
         justify-content: center;
       }
-    
+
       header h1 {
         width: 100%;
         text-align: center;
       }
-    
+
       header nav ul {
         margin-top: 20px;
         width: 100%;
         justify-content: center;
       }
-    
+
       header nav ul li a {
         font-size: 20px;
       }
-    
-      .contact-items{
+
+      .contact-items {
         text-align: center;
         width: 100%;
       }
@@ -292,7 +308,7 @@ a:hover {
     text-align: center;
   }
 
-  .section {
+  section {
     flex: 2 100%;
     text-align: center;
     justify-content: center;
@@ -305,15 +321,16 @@ a:hover {
     margin-bottom: 15px;
   }
 
-  section h1 h2 h3{
-    flex: 100%;  
+  section h1 h2 h3 {
+    flex: 100%;
   }
-
+  .profile-title {
+    text-size-adjust: auto;
+  }
 }
 /*Media Query for smallest screens*/
 
 @media screen and (max-width: 575px) {
-
   .contact-items {
     width: 100%;
   }
